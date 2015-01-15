@@ -25,3 +25,6 @@ System.Diagnostics.Debug.dll
 System.Net.Http.dll
 System.Runtime.Serialization.dll
 QuestForJoy.dll
+Refractored.Xam.Settings.dll
+Refractored.Xam.Settings.Abstractions.dll
+System.Resources.ResourceManager.dll

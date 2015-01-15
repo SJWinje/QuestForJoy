@@ -12,7 +12,6 @@ namespace QuestForJoy
 
 		public DetailPage (Scripture s)
 		{
-			//InitializeComponent ();
 			scripture = s;
 
 			stack = new StackLayout ();
@@ -22,9 +21,17 @@ namespace QuestForJoy
 				Spacing = 10, Padding = 20,
 				VerticalOptions = LayoutOptions.Start,
 				Children = {
-					new Label { Text = scripture.Heading, FontAttributes=FontAttributes.Bold },
-					new Label { Text = scripture.Verse, FontAttributes=FontAttributes.Italic },
-					new Label { Text = scripture.Description },
+					new Label { Text = scripture.Heading, 
+						FontAttributes=FontAttributes.Bold,
+						FontSize = Device.GetNamedSize (QuestForJoy.Helpers.Settings.TextSize, typeof(Label))
+					},
+					new Label { Text = scripture.Verse, 
+						FontAttributes=FontAttributes.Italic, 
+						FontSize = Device.GetNamedSize (QuestForJoy.Helpers.Settings.TextSize, typeof(Label))
+					},
+					new Label { Text = scripture.Description,
+						FontSize = Device.GetNamedSize (QuestForJoy.Helpers.Settings.TextSize, typeof(Label))
+					},
 				}
 			};
 

@@ -68,11 +68,13 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"QuestForJoy.Android.dll",
+		"Xamarin.Android.Support.v4.dll",
+		"Refractored.Xam.Settings.dll",
+		"Refractored.Xam.Settings.Abstractions.dll",
 		"Xamarin.Forms.Platform.Android.dll",
 		"FormsViewGroup.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"Xamarin.Android.Support.v4.dll",
 		"QuestForJoy.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Collections.dll",

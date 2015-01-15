@@ -68,7 +68,4 @@ Global
 		{D0615D99-FE4D-48F0-B255-74D9F631E5B9}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{D0615D99-FE4D-48F0-B255-74D9F631E5B9}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = iOS\QuestForJoy.iOS.csproj
-	EndGlobalSection
 EndGlobal
