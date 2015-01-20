@@ -8,7 +8,6 @@ namespace QuestForJoy
 		public static Page GetMainPage ()
 		{
 			return new NavigationPage(new MainPage());
-//			return new NavigationPage(new TabbedMainPage());
 		}
 	}
 }

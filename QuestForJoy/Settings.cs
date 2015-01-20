@@ -40,19 +40,18 @@ namespace QuestForJoy
 
 			Label header = new Label
 			{
-				Text = "Text Size: " + QuestForJoy.Helpers.Settings.TextSize.ToString(),
-				HorizontalOptions = LayoutOptions.CenterAndExpand,
-				VerticalOptions = LayoutOptions.CenterAndExpand
+				Text = QuestForJoy.Helpers.Settings.TextSize.ToString() + " text",
+				HorizontalOptions = LayoutOptions.StartAndExpand,
+				VerticalOptions = LayoutOptions.CenterAndExpand,
+				FontSize = Device.GetNamedSize (QuestForJoy.Helpers.Settings.TextSize, typeof(Label))
 			};
-			header.FontSize = Device.GetNamedSize (QuestForJoy.Helpers.Settings.TextSize, typeof(Label));
 
 			Stepper stepper = new Stepper
 			{
 				Minimum = 1,
 				Maximum = 4,
 				Increment = 1,
-				HorizontalOptions = LayoutOptions.Center,
-				VerticalOptions = LayoutOptions.CenterAndExpand
+				HorizontalOptions = LayoutOptions.Start
 			};
 			stepper.Value = (double)QuestForJoy.Helpers.Settings.TextSize;
 			stepper.ValueChanged += (sender, args) => {
@@ -72,10 +71,25 @@ namespace QuestForJoy
 					textSize = NamedSize.Large;
 					break;
 				}
-				header.Text = String.Format("Text Size: {0}", textSize.ToString());
+				header.Text = String.Format("{0} text", textSize.ToString());
 				header.FontSize = Device.GetNamedSize (textSize, typeof(Label));
-				System.Diagnostics.Debug.WriteLine ("Stepper Selected: " + textSize.ToString());
+//				System.Diagnostics.Debug.WriteLine ("Stepper Selected: " + textSize.ToString());
+//				System.Diagnostics.Debug.WriteLine ("FontSize: " + header.FontSize.ToString());
 				QuestForJoy.Helpers.Settings.TextSize = textSize;
+			};
+
+			Label copyright = new Label
+			{
+				Text = "\nPermissions:\nBy John Piper. ©2015 Desiring God Foundation. Website: desiringGod.org",
+				HorizontalOptions = LayoutOptions.StartAndExpand,
+				FontSize = Device.GetNamedSize (QuestForJoy.Helpers.Settings.TextSize, typeof(Label))
+			};
+
+			Label scripture = new Label
+			{
+				Text = "\nScripture taken from the Holy Bible, New International Version®. Copyright © 1973, 1978, 1984 by International Bible Society. Used by permission of International Bible Society. \"NIV\" and \"New International Version\" are trademarks registered in the United States Patent and Trademark office by International Bible Society.",
+				HorizontalOptions = LayoutOptions.StartAndExpand,
+				FontSize = Device.GetNamedSize (QuestForJoy.Helpers.Settings.TextSize, typeof(Label))
 			};
 
 			// Create table to hold the setting controls
@@ -92,14 +106,19 @@ namespace QuestForJoy
 					new TableSection ("Text Size") {
 						new ViewCell { View = stepper },
 						new ViewCell { View = header }
-					},
-
-				},
+					}
+				}
 			};
 
-			StackLayout s = new StackLayout ();
+			StackLayout s = new StackLayout { Padding = new Thickness(20) };
 			s.VerticalOptions = LayoutOptions.Start;
-			s.Children.Add (tview);
+			//
+			// Commented out TableView since it looks funny
+			// s.Children.Add (tview);
+			s.Children.Add (header);
+			s.Children.Add (stepper);
+			s.Children.Add (copyright);
+			s.Children.Add (scripture);
 			this.Content = s;
 		}
 	}

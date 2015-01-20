@@ -18,7 +18,8 @@ namespace QuestForJoy
 			scroll = new ScrollView ();
 
 			stack = new StackLayout {
-				Spacing = 10, Padding = 20,
+				Spacing = 10,
+				Padding = new Thickness(20),
 				VerticalOptions = LayoutOptions.Start,
 				Children = {
 					new Label { Text = scripture.Heading, 

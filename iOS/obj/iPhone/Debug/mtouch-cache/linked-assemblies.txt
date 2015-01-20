@@ -1,0 +1,14 @@
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.Xml.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/QuestForJoy.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/Mono.Dynamic.Interpreter.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/Refractored.Xam.Settings.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/Refractored.Xam.Settings.Abstractions.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.Core.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/QuestForJoyiOS.exe
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/monotouch.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.Forms.Platform.iOS.Classic.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.Net.Http.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/Xamarin.Forms.Core.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/mscorlib.dll
+/Users/winje/Projects/QuestForJoy/iOS/obj/iPhone/Debug/mtouch-cache/Link/System.Runtime.Serialization.dll

@@ -37,7 +37,7 @@ namespace QuestForJoy.Helpers
 
 	// TextSize
 	private const string TextSizeKey = "text_size_key";
-	private static readonly NamedSize TextSizeDefault = NamedSize.Default;
+	private static readonly NamedSize TextSizeDefault = NamedSize.Small;
 
 	#endregion
 
